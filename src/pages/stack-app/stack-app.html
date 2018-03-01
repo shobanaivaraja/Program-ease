@@ -1,0 +1,31 @@
+<!--
+  Generated template for the StackAppPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>StackApp</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="masters">
+
+<br/>
+ <ion-scroll scrollY="true" style="width: 100%; height: 100%;">
+ 	<div class="well">
+<div *ngFor= "let stack of data">
+<h1 class="heading">{{stack.id}}</h1>
+      <div class="values">{{stack.app1}}</div>    
+</div>
+
+ <img src="../assets/imgs/tower.jpeg" width="473px" height="250px" class="img-responsive" >
+<button ion-button round class="btn-primary" (click)='Next()' style="float: right;">Next</button>
+ </div>
+ </ion-scroll>
+
+</ion-content>
