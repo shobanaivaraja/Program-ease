@@ -1,0 +1,34 @@
+<!--
+  Generated template for the Python2Page page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Python2</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding class="masters">
+
+<div *ngFor= "let stack of data">
+<div class="well heading">
+      <ion-icon [name]="'logo-' + stack.icon" [ngStyle]="{'color': stack.color}"></ion-icon>
+      {{stack.title}}  
+</div>
+      <div class="desc">{{stack.description}}</div>  
+      <div class="subhead">
+      	<ion-icon name="ios-star-outline" class="custom-icon"></ion-icon>
+      {{stack.head}}</div>  
+         <div class="sentence">{{stack.des}}</div>  
+      <div class="code">{{stack.def}}</div><div class="code">{{stack.def1}}</div>
+       <div class="code">{{stack.def2}} </div><div class="code">{{stack.def3}} </div><div class="code">{{stack.def4}} </div><div class="code">{{stack.def5}}</div> <div class="code">{{stack.def6}} </div><div class="code">{{stack.def7}}</div> 
+      <img src="{{stack.img}}">
+      
+ </div>
+
+ <button ion-button round class="btn-primary" (click)='Next()' style="float: right;">Next</button>
+</ion-content>
