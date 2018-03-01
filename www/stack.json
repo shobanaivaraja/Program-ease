@@ -1,0 +1,204 @@
+{
+   "stack": [
+      {
+         "id": "Definition",
+         "value1": "Stack is an ordered collection of element in which insertion & deletion operations are restricted to one end of list. "
+      },
+      {
+         "value1": "The end from which elements are added or removed to or from the list is referred as a “TOP” of Stack. "
+      },
+      {
+         "value1": "It is also referred as “Push-Down List” or “Piles”."
+      },
+      {
+         "value1": "The first element placed in the stack will be at the bottom of stack."
+      }
+   ],
+   "operations": [
+      {
+         "id": "Operations",
+         "value1": "The primary operations that can be carried on the Stack ADT are insertion & deletion which are named as PUSH & POP respectively."
+      },
+      {
+         "value1": "These operations are carried out with the help of Top Pointer which always points or keeps track of top element of stack. The top pointer keeps track of, top element in the stack i.e. Last inserted element. One more operation called PEEK."
+      },
+      {
+         "value1": "1.\tPUSH operation insert new element onto the top of stack."
+      },
+      {
+         "value1": "2.\tPOP operation deletes an element from the top of stack."
+      },
+      {
+         "value1": "3.\tPEEK operation displays the top element of stack"
+      }
+   ],
+   "program": [
+      {
+         "program2": "struct node{"
+      },
+      {
+         "program1": " int no;"
+      },
+      {
+         "program1": " struct node*next;"
+      },
+      {
+         "program1": "}*temp,*newnode,*top=NULL;"
+      },
+      {
+         "program2": "void create_node(){"
+      },
+      {
+         "program1": "newnode=(s *)malloc(sizeof(s));"
+      },
+      {
+         "program1": "printf('Enter the number ');"
+      },
+      {
+         "program1": "scanf('%d',&newnode->data);"
+      },
+      {
+         "program1": "newnode->next=NULL;}"
+      },
+      {
+         "program2": "void push(){"
+      },
+      {
+         "program1": "create_node();"
+      },
+      {
+         "program1": "newnode->next=top;"
+      },
+      {
+         "program1": "top=newnode;"
+      },
+      {
+         "program1": "printf('The Element %d is pushed onto the Stack\n',newnode->no);"
+      },
+      {
+         "program1": "}"
+      },
+      {
+         "program2": "void pop()"
+      },
+      {
+         "program1": "{"
+      },
+      {
+         "program1": " temp=top;"
+      },
+      {
+         "program1": "if(top==NULL)"
+      },
+      {
+         "program1": "printf('Empty Stack\n');"
+      },
+      {
+         "program1": "else"
+      },
+      {
+         "program1": "{"
+      },
+      {
+         "program1": "top=top->next;"
+      },
+      {
+         "program1": "printf('Element %d is popped from the Stack',temp->no);"
+      },
+      {
+         "program1": "free(temp);"
+      },
+      {
+         "program1": "}}"
+      },
+      {
+         "program2": "void peek()"
+      },
+      {
+         "program1": "{"
+      },
+      {
+         "program1": "if(top==NULL)"
+      },
+      {
+         "program1": "printf('Empty Stack\n');"
+      },
+      {
+         "program1": "else"
+      },
+      {
+         "program1": "printf('The peek value of stack is: %d',top->no);"
+      },
+      {
+         "program1": "}"
+      },
+      {
+         "program2": "void display()"
+      },
+      {
+         "program1": "{"
+      },
+      {
+         "program1": "if(top==NULL)"
+      },
+      {
+         "program1": "printf('Stack is Empty\n');"
+      },
+      {
+         "program1": "else"
+      },
+      {
+         "program1": " {"
+      },
+      {
+         "program1": " temp=top;"
+      },
+      {
+         "program1": " printf('The elements present in the stack :\n');"
+      },
+      {
+         "program1": " while(temp!=NULL)"
+      },
+      {
+         "program1": " {"
+      },
+      {
+         "program1": "printf('%d\t',temp->no);"
+      },
+      {
+         "program1": " temp=temp->next;"
+      },
+      {
+         "program1": "  }"
+      },
+      {
+         "program1": " }"
+      },
+      {
+         "program1": "}"
+      }
+   ],
+   "application": [
+      {
+         "id": " Application of Stack ADT"
+      },
+      {
+         "app1": "1. Tower of Hanoi"
+      },
+      {
+         "app1": "2. Reverse a string"
+      },
+      {
+         "app1": "3. Balanced parenthesis (or) Balancing symbol"
+      },
+      {
+         "app1": "4. Conversion from infix expression to postfix expression"
+      },
+      {
+         "app1": "5. Evaluation of postfix expression"
+      },
+      {
+         "app1": "6. Function calls"
+      }
+   ]
+}
