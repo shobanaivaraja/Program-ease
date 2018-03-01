@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Data Structure</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="masters">
+  <div class="well">
+    <h1 class="heading">Data Structure</h1>
+  <div *ngFor= "let datas of data">
+    <div class="values">{{datas.def}}</div>
+    </div>
+    </div>
+    <div class="well">
+      <div *ngFor= "let datas of data">
+      <div class="values1">{{datas.id}}</div>
+    <div class="values">{{datas.name}}</div>
+    </div>
+    </div>
+    <div class="well">
+          <div *ngFor= "let datas of data">
+      <div class="heading">{{datas.id1}}</div>
+    <div class="values">{{datas.name1}}</div>
+    <div class="values">{{datas.name2}}</div>
+    </div>
+  </div>
+  <div class="well">
+      <div *ngFor= "let datas of data">
+      <div class="values1">{{datas.t1}}</div>
+    <div class="values">{{datas.td1}}</div>
+    <div class="values">{{datas.td2}}</div>
+    </div>
+    </div>
+  <div class="well">
+      <div *ngFor= "let datas of data">
+      <div class="values1">{{datas.t2}}</div>
+    </div>
+    <br/>
+ <img src="../assets/imgs/ds.jpeg" width="470px" height="200px" align="middle" class="img-responsive" >
+    <button ion-button round class="btn-primary" (click)='Next()' style="float: right;">Next</button>
+ </div>
+  </ion-content>
