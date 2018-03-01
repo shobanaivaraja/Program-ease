@@ -1,0 +1,42 @@
+<!--
+  Generated template for the TypelistPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Typelist</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="masters">
+	<div class="well">
+<div *ngFor= "let stack of data">
+
+      <div class="heading">{{stack.id1}}</div>  
+      <div class="values1">{{stack.def3}}</div>      
+      <div class="values">{{stack.def}}</div>
+</div></div>
+<img src="../assets/imgs/sll.jpg" width="400px" height="100px" class="img-responsive" >
+
+ 	<div class="well">
+<div *ngFor= "let stack of data"><div class="values1">{{stack.def1}}</div>
+</div>
+<img src="../assets/imgs/dll.png" width="400px" height="100px" class="img-responsive" >
+ 	<div class="well">
+<div *ngFor= "let stack of data">
+ 
+      <div class="values1">{{stack.def2}}</div>
+</div></div>
+<p class="values">Circular Singly Linked List</p>
+<img src="../assets/imgs/csll.jpg" width="400px" height="100px" class="img-responsive" ><br/>
+<p class="values">Circular Doubly Linked List</p>
+<img src="../assets/imgs/cdll.jpg" width="400px" height="100px" class="img-responsive" >
+ <button ion-button round class="btn-primary" (click)='Next()' style="float: right;">Next</button>
+ </div>
+
+</ion-content>
