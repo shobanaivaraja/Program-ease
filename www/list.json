@@ -1,0 +1,642 @@
+{  
+   "List":[  
+      {  
+         "id":"Definition"
+      },
+      {  
+         "def":"Lists are very common structure in the real as well as computing world. A list is simply a sequential arrangement of items or element. It is an ADT object contains dynamic collection of elements of size N, which are arranged in a linear sequence."
+      }
+   ],
+   "ListType":[  
+      {  
+         "id":"Empty list",
+         "def":" A list has no elements or its length is Zero."
+      },
+      {  
+         "id":"Ordered list",
+         "def":" Elements are arranged based on some sort of ordering criteria."
+      },
+      {  
+         "id":"Unordered list",
+         "def":"No clear fashion of arrangements."
+      },
+      {  
+         "id":"Stack",
+         "def":" If the elements are deleted & inserted in the same end of the list then the List is referred as a Stack."
+      },
+      {  
+         "id":"Queue",
+         "def":" If the elements are deleted at one end and inserted at the other end of the list then the List is referred as Queue."
+      }
+   ],
+   "DS":[  
+      {  
+         "id1":"Structure of Node",
+         "def":"Basically a ‘NODE’ contains two fields. They are,"
+      },
+      {  
+         "id":"Data Field",
+         "def":"Used to store the Element values. A node may contain one or more Data fields."
+      },
+      {  
+         "id":"Link Field (or) Address Field",
+         "def":"Store the Address of another Node (also called as Internal Address) which holds the next or adjacent element of this Node. This field is mainly used for making the Linked List.  A node must contain atleast one Link field."
+      },
+      {  
+         "id1":"Basic Terms"
+      },
+      {  
+         "id":"Head pointer",
+         "def":" It holds the address of the first node in the linked list. So the entire list can be accessed only with the help of this head pointer. This is also called as External Address."
+      },
+      {  
+         "id":"Tail Pointer",
+         "def":" It holds the address of the Last node in Linked list. Usage of this pointer is optional."
+      },
+      {  
+         "id":"NULL pointer",
+         "def":" To indicate the end of list, NULL value is stored in the address field of a node. This is called Null Address."
+      }
+   ],
+   "Typelist":[  
+      {  
+         "id1":"Types of linked list",
+         "def":"Based on the structure of a node, A Linked list is classified as"
+      },
+      {  
+         "def3":"1. Singly Linked List"
+      },
+      {  
+         "def1":"2. Doubly Linked List"
+      },
+      {  
+         "def2":"3. Circular Linked List"
+      }
+   ],
+   "program":[  
+      {  
+         "p1":"struct node Node"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"int data;"
+      },
+      {  
+         "p":"struct node *next;"
+      },
+      {  
+         "p":"};"
+      },
+      {  
+         "p":"struct node *head,*tail,*prev,*temp,*newnode;  //Structure Pointers"
+      },
+      {  
+         "p":"head=NULL;"
+      },
+      {  
+         "p":"tail=NULL;"
+      },
+      {  
+         "p1":"void create_node( )  //Memory allocation and initialization of New Node"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"newnode=(struct node *)malloc(size of(struct node));"
+      },
+      {  
+         "p":"if (newnode= =NULL)"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":"printf('Memory is not allocated for a node\n');"
+      },
+      {  
+         "p":"   break;"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p":"else"
+      },
+      {  
+         "p":"  {"
+      },
+      {  
+         "p":"   printf(“Enter the data value\n”);"
+      },
+      {  
+         "p":"   scanf(“%d”,&newnode->data);"
+      },
+      {  
+         "p":"   newnode->next=NULL;"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void create_list( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"int choice=1;"
+      },
+      {  
+         "p":"while(choice)"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"create_node();"
+      },
+      {  
+         "p":"if(head= =NULL)"
+      },
+      {  
+         "p":" tail=head=newnode;"
+      },
+      {  
+         "p":"  else"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"tail->next=newnode;"
+      },
+      {  
+         "p":"tail=newnode;"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p":" printf('Do u want to enter one more element press 1 \n;);"
+      },
+      {  
+         "p":" scanf(“%d”,&choice);"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void insert_first( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"create_node();"
+      },
+      {  
+         "p":"if(head = = NULL)"
+      },
+      {  
+         "p":"head=tail=newnode;"
+      },
+      {  
+         "p":" else"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":"  newnode->next=head;"
+      },
+      {  
+         "p":" head=newnode;"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void insert_last( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"if(head= =NULL)"
+      },
+      {  
+         "p":"head=tail=newnode;"
+      },
+      {  
+         "p":"  else"
+      },
+      {  
+         "p":"  {"
+      },
+      {  
+         "p":"     create_node();"
+      },
+      {  
+         "p":"    tail->next=newnode;"
+      },
+      {  
+         "p":"   tail=newnode;"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void insert_intermediate( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"   int i=1,pos;"
+      },
+      {  
+         "p":" create_node();"
+      },
+      {  
+         "p":"  printf(“enter the position to insert\n”);"
+      },
+      {  
+         "p":" scanf(“%d”,&pos);"
+      },
+      {  
+         "p":" temp=head;"
+      },
+      {  
+         "p":" if(head= =NULL)"
+      },
+      {  
+         "p":"       head=tail=newnode;"
+      },
+      {  
+         "p":"else"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":" while(temp!=NULL && i<pos-1)"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":"    temp=temp->next;"
+      },
+      {  
+         "p":"     i=i+1;"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":" newnode->next=temp->next;"
+      },
+      {  
+         "p":" temp->next=newnode;"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void delete_first( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"if(head= =NULL)"
+      },
+      {  
+         "p":"       printf(“List empty\n”);"
+      },
+      {  
+         "p":" else"
+      },
+      {  
+         "p":"    {"
+      },
+      {  
+         "p":"       temp=head;"
+      },
+      {  
+         "p":" head=head->next;"
+      },
+      {  
+         "p":"   free(temp);"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void delete_last( )"
+      },
+      {  
+         "p":"  {"
+      },
+      {  
+         "p":"if(head= =NULL)"
+      },
+      {  
+         "p":" printf(“list is empty\n”);"
+      },
+      {  
+         "p":"   else"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"temp=head;"
+      },
+      {  
+         "p":"    if(head->next= =NULL)"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":" head=tail=NULL;"
+      },
+      {  
+         "p":"free(temp);"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"else"
+      },
+      {  
+         "p":"  {"
+      },
+      {  
+         "p":"   while(temp->next->next!=NULL)"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":"temp=temp->next;"
+      },
+      {  
+         "p":"      prev=temp->next;"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"temp->next=NULL;"
+      },
+      {  
+         "p":"free(prev);"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p1":" void delete_intermediate( )"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":" int pos,i=1;"
+      },
+      {  
+         "p":"  if(head= =NULL)"
+      },
+      {  
+         "p":" printf(“List is empty\n”);"
+      },
+      {  
+         "p":"  else "
+      },
+      {  
+         "p":"  {"
+      },
+      {  
+         "p":"      printf(“Enter the position of the node to delete\n”);"
+      },
+      {  
+         "p":"     scanf(“%d”,&pos);"
+      },
+      {  
+         "p":"   if((pos= =1)||(head->next= =NULL))"
+      },
+      {  
+         "p":"   {"
+      },
+      {  
+         "p":"      temp=head;"
+      },
+      {  
+         "p":"     head=head->next;"
+      },
+      {  
+         "p":"    free(temp);"
+      },
+      {  
+         "p":"   }"
+      },
+      {  
+         "p":"  else"
+      },
+      {  
+         "p":"   {"
+      },
+      {  
+         "p":"       temp=head;"
+      },
+      {  
+         "p":"     while(temp!=NULL && i<(pos-1))"
+      },
+      {  
+         "p":"       {"
+      },
+      {  
+         "p":"           temp=temp->next;"
+      },
+      {  
+         "p":"          i=i+1;"
+      },
+      {  
+         "p":"     }"
+      },
+      {  
+         "p":"   prev=temp->next;"
+      },
+      {  
+         "p":"  temp->next=temp->next->next;"
+      },
+      {  
+         "p":" free(prev);"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":" }"
+      },
+      {  
+         "p1":"void traversal( )"
+      },
+      {  
+         "p":" {"
+      },
+      {  
+         "p":" int i;"
+      },
+      {  
+         "p":"   if(head= =NULL)"
+      },
+      {  
+         "p":"           printf(“List empty\n”);"
+      },
+      {  
+         "p":"  else"
+      },
+      {  
+         "p":"   {       "
+      },
+      {  
+         "p":"    i=0;"
+      },
+      {  
+         "p":"    temp=head;"
+      },
+      {  
+         "p":"    printf(“elements in the list are\n);"
+      },
+      {  
+         "p":"   while(temp!=NULL)"
+      },
+      {  
+         "p":"    {"
+      },
+      {  
+         "p":"          printf(“%d\t”,temp->data);"
+      },
+      {  
+         "p":"         i=i+1;"
+      },
+      {  
+         "p":"         temp=temp->next;"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"  printf(“\n The count is %d”,&i);"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"}"
+      },
+      {  
+         "p1":"void search( )"
+      },
+      {  
+         "p":"{"
+      },
+      {  
+         "p":"int ele;"
+      },
+      {  
+         "p":"  if(head= =NULL)"
+      },
+      {  
+         "p":"printf(“list empty\n”);"
+      },
+      {  
+         "p":"  else"
+      },
+      {  
+         "p":"    {"
+      },
+      {  
+         "p":"    printf(“enter the element to search\n”);"
+      },
+      {  
+         "p":"scanf(“%d”,&ele);"
+      },
+      {  
+         "p":"    temp=head;"
+      },
+      {  
+         "p":" while(temp!=NULL)"
+      },
+      {  
+         "p":"   {"
+      },
+      {  
+         "p":"   if(temp->data= =ele)"
+      },
+      {  
+         "p":"          {"
+      },
+      {  
+         "p":"              printf(“element is found\n”);"
+      },
+      {  
+         "p":"            break;"
+      },
+      {  
+         "p":"        }"
+      },
+      {  
+         "p":"   temp=temp->next;"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":" if(temp= =NULL)"
+      },
+      {  
+         "p":"     printf(“element not found\n”);"
+      },
+      {  
+         "p":"  }"
+      },
+      {  
+         "p":"}"
+      }
+   ]
+}

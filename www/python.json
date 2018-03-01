@@ -1,0 +1,189 @@
+{
+   "python":[
+      {
+         "title":"Python",
+         "icon":"python",
+         "description":"A clear and powerful object-oriented programming language!",
+         "color":"#3575AC",
+         "head":"Hello World Example",
+         "def":"print('Hello world!'')",
+         "des":"Type the following code in any text editor or an IDE and save it as helloWorld.py"
+      },
+      {
+         "head":"Identifiers",
+         "des":"Identifier is the name given to entities like class, functions, variables etc. in Python. It helps differentiating one entity from another."
+      },
+      {
+         "head":"Keywords",
+         "des":"Keywords are the reserved words in Python.In Python, keywords are case sensitive.There are 33 keywords in Python 3.3. This number can vary slightly in course of time.",
+         "img":"/assets/imgs/key.png"
+      },
+      {
+         "head":"Numbers",
+         "des":"Integers, floating point numbers and complex numbers falls under Python numbers category. They are defined as int, float and complex class in Python.We can use the type() function to know which class a variable or a value belongs to and the isinstance() function to check if an object belongs to a particular class",
+         "def":"a = 5 ",
+         "def1":"print(a, 'is of type', type(a))"
+      },
+      {
+         "head":"List",
+         "des":"List is an ordered sequence of items. It is one of the most used datatype in Python and is very flexible. All the items in a list do not need to be of the same type.Declaring a list is pretty straight forward. Items separated by commas are enclosed within brackets [ ].",
+         "def":"a = [1, 2.2, 'python']"
+      },
+      {
+         "head":"Tuple",
+         "des":"Tuple is an ordered sequence of items same as list.The only difference is that tuples are immutable. Tuples once created cannot be modified. Tuples are used to write-protect data and are usually faster than list as it cannot change dynamically.It is defined within parentheses () where items are separated by commas.",
+         "def":"t = (5,'program', 1+3j)"
+      },
+      {
+         "head":"Strings",
+         "des":"String is sequence of Unicode characters. We can use single quotes or double quotes to represent strings. Multi-line strings can be denoted using triple quotes,  '''  or triple double quotes",
+         "def":"s = 'Hello world!'",
+         "def1":"# s[4] = 'o'",
+         "def2":"print('s[4] = ', s[4])",
+         "def3":"# s[6:11] = 'world'",
+         "def4":"print('s[6:11] = ',' s[6:11])",
+         "def5":"# Generates error",
+         "def6":"# Strings are immutable in Python",
+         "def7":"s[5] ='d'"
+      },
+      {
+         "head":"Conversion between data types",
+         "des":"We can convert between different data types by using different type conversion functions like int(), float(), str() etc.",
+         "def":">>> float(5)",
+         "def1":"5.0",
+         "def2":">>> int(10.6)",
+         "def3":"10",
+         "def4":">>> int(-10.6)",
+         "def5":"-10"
+      }
+   ],
+   "part2":[
+      {
+         "title":"Operators",
+         "head":" Arithmetic operators",
+         "des":"Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication etc.",
+         "img":"/assets/imgs/op.png",
+        "def":"x = 15",
+         "def1":"y = 4",
+"def2":"print('x + y =',x+y)\t\t# Output: x + y = 19",
+"def3":"print('x - y =',x-y) \t\t# Output: x - y = 11",
+"def4":"print('x * y =',x*y)\t\t# Output: x * y = 60",
+"def5":"print('x / y =',x/y)\t\t # Output: x / y = 3.75",
+"def6":"print('x // y =',x//y)\t\t# Output: x // y = 3",
+"def7":"print('x ** y =',x**y)\t\t# Output: x ** y = 50625"
+      },{
+        "head":"Comparison operators",
+        "des":"Comparison operators are used to compare values. It either returns True or False according to the condition.",
+        "img":"/assets/imgs/rop.png",
+        "def":"x = 10 \ty = 12",
+     "def1":"print('x > y  is',x>y)\t\t # Output: x > y is False",
+     "def2":"print('x < y is',x<y)\t\t# Output: x < y is True"  ,
+     "def3":"print('x == y is',x==y)\t\t# Output: x == y is False",
+     "def4":"print('x != y is',x!=y)\t\t# Output: x != y is True",
+     "def5": "print('x >= y is',x>=y)\t\t# Output: x >= y is False",
+     "def6":"print('x <= y is',x<=y)\t\tx <= y is True"  },
+     {
+      "head":"Logical operators",
+      "des":"Logical operators are the and, or, not operators.",
+      "img":"/assets/imgs/log.png",
+      "def":"x = True\t\ty = False",
+      "def1":"print('x and y is',x and y)\t\t# Output: x and y is False",
+      "def2":"print('x or y is',x or y)\t\t# Output: x or y is True",
+      "def3":"print('not x is',not x)\t\t# Output: not x is False"
+     },{
+      "head":"Bitwise operators",
+"des":"Bitwise operators act on operands as if they were string of binary digits. It operates bit by bit, hence the name.",
+        "img":"/assets/imgs/bop.png"
+
+     },{
+      "head":"Assignment operators",
+"des":"Assignment operators are used in Python to assign values to variables.a = 5 is a simple assignment operator that assigns the value 5 on the right to the variable a on the left."
+     },{
+      "title":"Special Operators",
+      "head":"Identity operators",
+"des":"It is and is not are the identity operators in Python. They are used to check if two values (or variables) are located on the same part of the memory. Two variables that are equal does not imply that they are identical.",
+      "img":"/assets/imgs/idop.png",
+      "def":"x1 = 5",
+"def":"y1 = 5",
+"def1":"x2 = 'Hello'",
+"def2":"y2 = 'Hello'",
+"def3":"x3 = [1,2,3]",
+"def4":"y3 = [1,2,3]",
+"def5":"print(x1 is not y1)\t\t# Output: False",
+"def6":"print(x2 is y2)\t\t# Output: True",
+"def7":"print(x3 is y3)\t\t# Output: False"
+},{
+   "head":"Membership operators",
+"des":"Membership operators in and not in are the membership operators in Python. They are used to test whether a value or variable is found in a sequence (string, list, tuple, set and dictionary).",
+"img":"/assets/imgs/mop.png",
+"def":"x = 'Hello world'",
+"def1":"y = {1:'a',2:'b'}",
+"def2":"print('H' in x)\t\t# Output: True",
+"def3":"print('hello' not in x)\t\t# Output: True",
+"def4":"print(1 in y)\t\t# Output: True",
+"def5":"print('a' in y)\t\t# Output: False"
+
+}
+   ],
+   "part3":[
+   {
+      "head":"if Statement",
+      "def":"Syntax:",
+      "def1":"if test expression:",
+      "def2":"\t\tstatement(s)",
+      "img":"/assets/imgs/if.png",
+      "def3":"Eg: num = 3",
+      "def4":"if num > 0:",
+      "def5":"    print(num, 'is a positive number.'')",
+      "def6":"print('This is always printed.')"
+   },
+   {
+      "head":"if...else Statement",
+      "def":"Syntax:",
+      "def1":"if test expression:",
+      "def2":"    Body of if",
+      "def3":"else:",
+      "def4":"    Body of else",
+      "img":"/assets/imgs/ife.png",
+      "def5":"Eg: num = 3",
+      "def6":"if num >= 0:",
+      "def7":"    print('Positive or Zero')"
+   },
+   {
+      "def":"else:",
+      "def1":"    print('Negative number')"
+   },
+   {
+      "head":"if...elif...else Statement",
+      "des":"The elif is short for else if. It allows us to check for multiple expressions.",
+      "def":"if test expression:",
+      "def1":"    Body of if",
+      "def2":"elif test expression:",
+      "def3":"    Body of elif",
+      "def4":"else: ",
+      "def5":"    Body of else",
+      "img":"/assets/imgs/ifl.png"
+   },
+   {
+      "def":"num = 3.4",
+      "def1":"if num > 0:",
+      "def1":"    print('Positive number')",
+      "def2":"elif num == 0:",
+      "def3":"    print('Zero')",
+      "def4":"else:",
+      "def5":"    print('Negative number')"
+   },
+   {
+      "head":"Nested if statements",
+      "des":"We can have a if...elif...else statement inside another if...elif...else statement. This is called nesting in computer programming.",
+      "def":"num = float(input('Enter a number: ;))",
+      "def1":"if num >= 0:",
+      "def2":"    if num == 0:",
+      "def3":"        print('Zero')",
+      "def4":"    else:",
+      "def5":"        print('Positive number')",
+      "def6":"else:",
+      "def7":"    print('Negative number')"
+   }
+]
+}

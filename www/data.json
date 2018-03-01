@@ -1,0 +1,85 @@
+{
+   "result": [
+      {
+         "def": "Data structure is a particular way of storing and organizing data in a computer memory so that it can be used efficiently"
+      },
+      {
+         "id": "Application",
+         "name": "* Compiler design"
+      },
+      {
+      "name":"* Operating System"
+      },
+      {
+      "name":"* Data Base Management System "
+      },
+      {
+         "name":"* Networking "
+      },
+      {
+         "name":"* Graphics"
+      }, 
+      {
+         "name":"* Artificial Intelligence"
+      },{
+         "name":"* Statistical analysis"
+      },
+       {
+         "id1": "Classification",
+         "name1": "1. Premitive Data structure",
+         "name2": "2. Non-Primitive Data Structure"
+      },
+      {
+         "t1": "1. Premitive Data Structure",
+         "td1": "These are basic structures directly operated upon by the machine instructions.",
+         "td2": " Data types such as integer, real, character & Boolean are known as primitive data structures. These cannot be grouped."
+      },
+      {
+         "t1": "2. Non-Primitive Data Structure",
+         "td1": "It emphasize on structuring of a group of data items, according to their relationship.",
+         "td2": " According to the nature of memory size, it will be further classified as "
+      },
+      {
+         "t2": "1. Static Data structure"
+      },{
+          "t2": "2. Dynamic Data structures."
+      }
+   ],
+
+   "items":[
+     {
+        "title": "Data Structure",
+        "icon": "designernews",
+        "description": "Data structure is a particular way of storing and organizing data in a computer memory so that it can be used efficiently",
+        "color": "#6830C3"
+      },
+{"title": "Python",
+        "icon": "python",
+        "description": "A clear and powerful object-oriented programming language!",
+        "color": "#3575AC"},
+         {
+        "title": "Php",
+        "icon": "pinterest",
+        "description": "Php is server side scripting language and used for web development",
+        "color": "#6830C3"
+      },
+      {
+        "title": "CSS3",
+        "icon": "css3",
+        "description": "The latest version of cascading stylesheets - the styling language of the web!",
+        "color": "#0CA9EA"
+      },
+       {
+        "title": "JavaScript",
+        "icon": "javascript",
+        "description": "One of the most popular programming languages on the Web!",
+        "color": "#FFD439"
+      }, {
+        "title": "HTML5",
+        "icon": "html5",
+        "description": "The latest version of the web\"s markup language.",
+        "color": "#F46529"
+      }
+   ]
+
+}
