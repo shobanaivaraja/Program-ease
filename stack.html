@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Stack</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="masters">
+  <div class="well">
+    <h1 class="heading">Stack Operation</h1>
+  <div *ngFor= "let stack of data">
+     <div class="values1"> {{stack.id}}</div><br/>
+      <div class="values">{{stack.value}}</div>
+
+      <div class="values">{{stack.value1}}</div>
+ </div>
+
+ <img src="../assets/imgs/stack-operations.jpg" width="473px" height="250px" class="img-responsive" >
+ <button ion-button round class="btn-primary" (click)='Next()' style="float: right;">Next</button>
+ </div>
+  </ion-content>
+
